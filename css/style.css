@@ -1,0 +1,353 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #f4f6f8;
+}
+
+.bg-white {
+    background: #fff;
+}
+
+.bg-red {
+    background: red;
+}
+
+.bg-green {
+    background: green;
+}
+
+.bg-blue {
+    background: blue;
+}
+
+.bg-black {
+    background: black;
+}
+
+.active {
+    background: #ff5912;
+}
+
+.orange {
+    color: #ff5912;
+}
+
+.not-orange {
+    color: #e9ecf3;
+}
+
+.text-large {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.bg-gray {
+    background: #f4f6f8;
+}
+
+.margin-top-100px {
+    margin-top: 100px;
+}
+
+.margin-bottom-100px {
+    margin-bottom: 100px;
+}
+/* <------------------------------------main banner------------------------------------> */
+
+.main-banner {
+    min-height: 670px;
+    background-image: url(../images/slider.png);
+    background-size: cover;
+}
+
+.main-banner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: flex-start;
+}
+
+.main-banner h2 {
+    font-weight: 700;
+}
+
+.main-banner .container {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: center;
+}
+
+.main-banner p {
+    margin-bottom: 5px;
+}
+
+.order-block {
+ font-size: 20px;
+ font-weight: 400;
+ margin-top: 35px;
+}
+
+.order-block::after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.order-block i {
+    margin: 0 10px 0 25px;
+}
+/* <------------------------------------main banner end---------------------------------> */
+
+/* <------------------------------------new arrivals------------------------------------> */
+.block-new-arrivals h2,
+.block-best-sales h2 {
+    font-weight: 800;
+    margin: 70px 0 20px 0;
+    color: #34404b;
+}
+
+.block-new-arrivals h2 span,
+.block-best-sales h2 span {
+    color: #ff5912;
+}
+
+.block-new-arrivals p span,
+.block-best-sales p span {
+    color: #ff5912;
+}
+
+.block-new-arrivals .section-description,
+.block-best-sales .section-description {
+    margin: 20px 0 75px 0;
+}
+
+.goods-card {
+    height: 370px;
+    padding-top: 30px;
+    background: #fff;
+    color: #34404b;
+    font-weight: 700;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.goods-card img {
+   max-height: 211px;
+   margin-bottom: 40px;
+}
+
+.cart-back-ico {
+    border-top: 1px solid #cdd6db;
+    margin: 15px 40px 0 40px;
+    padding-top: 15px;
+}
+
+.cart-back {
+    opacity: 0;
+    transition: all ease 1s;
+}
+
+.goods-card:hover .cart-back {
+    opacity: 1;
+}
+
+.goods-card:hover img {
+    height: 95px;
+}
+.goods-card img {
+    height: 211px;
+    transition: all ease 1s;
+}
+
+.cart-back span {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    margin: 0 3px 0 3px;
+}
+
+.cart-back a {
+    color: #34404b;
+    margin: 0 5px;
+}
+/* <------------------------------------new arrivals end--------------------------------> */
+
+/* <------------------------------------best sales--------------------------------------> */
+.goods-card-370 {
+    min-height: 160px;
+    background: #fff;
+}
+
+
+
+.goods-card-370 img {
+    margin: 20px 23px;
+}
+
+.best-sales-discription {
+    width: 61%;
+    float: right;
+}
+
+.best-sales-discription h4 {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    margin: 30px 0 20px 0;
+    color: #44525e;
+}
+
+.best-sales-discription i {
+    font-size: 12px;
+}
+/* <------------------------------------best sales end----------------------------------> */
+
+
+/* <------------------------------------divider------------------------------------> */
+.divider {
+    margin-top: 80px;
+    min-height: 60px;
+    line-height: 60px;
+    background: #fff;
+}
+
+.divider span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #ff5912;
+    border-radius: 100%;
+}
+/* <------------------------------------divider-end--------------------------------> */
+
+/* <------------------------------------block adv----------------------------------> */
+.block-adv {
+    min-height: 100px;
+    margin-top: 100px;
+    background: #fff;
+    border: 1px solid #eaedef;
+}
+
+.sale {
+    float: left;
+    width: 22%;
+    max-height: 100px;
+    margin: 10px 2%;
+}
+
+.sale p {
+    position: relative;
+    bottom: 65px;
+    font-style: italic;
+    font-size: 12px;
+    color: #fff;
+}
+
+.sale span {
+    position: relative;
+    bottom: 84px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.slogan {
+    float: left;
+    width: 40%;
+    margin: 0 2%;
+    color: #34404b;
+    text-align: left;
+}
+
+.slogan h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #44525e;
+}
+
+.slogan p {
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.slogan::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 50px;
+    background: #dfdfe0;
+    position: absolute;
+    right: 233px;
+    bottom: 44px;
+}
+
+.price {
+    float: left;
+    width: 26%;
+    margin: 0 2%;
+    line-height: 100px;
+    font-size: 24px;
+    color: #ff5912;
+}
+
+.price span {
+    margin: 0 10px;
+}
+
+.aux {
+    padding: 16px;
+}
+
+.aux p {
+    margin: 5px 0;
+}
+/* <------------------------------------block adv-end------------------------------> */
+
+/* <------------------------------------block letter------------------------------> */
+.letter {
+height: 123px;
+background: #fff;
+margin: 90px 0;
+line-height: 123px;
+}
+
+.letter p {
+font-size: 14px;
+font-style: italic;
+margin-right: 60px;
+}
+
+.letter span  {
+font-size: 18px;
+font-style: normal;
+margin-right: 20px;
+color: #ff5912;
+}
+
+.letter .far  {
+font-size: 18px;
+font-style: normal;
+margin-right: 13px;
+color: #ff5912;
+}
+
+.letter button {
+    width: 100px;
+    height: 50px;
+    background: #ff5912;
+    border: none;
+    color: #fff;
+}
+/* <------------------------------------block letter-end---------------------------> */
+
+
+
+
+
